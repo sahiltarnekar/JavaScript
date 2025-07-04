@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+        <script>
+
+                // var ch = 'A';
+                // do {
+                //         document.write(ch + "<br>");  // print current letter
+
+
+                //         ch = String.fromCharCode(ch.charCodeAt(0) + 4 );  // move 4 steps ahead
+                // } while (ch <= 'Z');
+
+                // let num = Numbe(prompt("Enter any number:"));  // Example: 752
+                // let count = 0;
+
+                // do {
+                //         count++;
+                //         num = Math.floor(num / 10);
+                // } while (num > 0);
+
+                // console.log("Total number of digits: " + count);
+                var num = parseInt(prompt("Enter any number:"));  // Example: 384
+                var lastDigit = num % 10;
+                var firstDigit = num;
+
+                while (firstDigit >= 10) {
+                        firstDigit = Math.floor(firstDigit / 10);
+                }
+
+                var sum = firstDigit + lastDigit;
+                console.log("The sum of the first and the last digit: " + sum);
+
+        </script>
+</body>
+
+</html>

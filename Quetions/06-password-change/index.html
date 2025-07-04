@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+<body>
+        <script>
+                var old_password = Number(prompt("Enter Your old password"));
+                if(old_password === 1234){
+                        var new_password = Number(prompt("Enter Your New password"));
+                        var confirm_password = Number(prompt("Enter Your confirm password"));
+                        if(new_password === confirm_password){
+                                alert("Your password is successfully change");
+                        }else{
+                                alert("Your new password and confirm password does not match");
+                        }
+                }else {
+                        alert("Enter Valid old password");
+                }
+                old_password = new_password;
+                document.write(old_password);
+        </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!-- 1. Write a program that takes a student's mark as input and prints the corresponding grade.(grade system) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grade system</title>
+  </head>
+
+  <body>
+    <script>
+      var mark = prompt("Enter your marks:");
+      if (mark > 90) {
+        document.write("Grade: A+");
+      } else if (mark > 80 && mark <= 90) {
+        document.write("Grade: A");
+      } else if (mark > 70 && mark <= 80) {
+        document.write("Grade: B+");
+      } else if (mark > 60 && mark <= 70) {
+        document.write("Grade: B");
+      } else if (mark > 50 && mark <= 60) {
+        document.write("Grade: C");
+      } else if (mark >= 0 && mark <= 50) {
+        document.write("Grade: Fail");
+      } else {
+        document.write("Invalid marks ");
+      }
+    </script>
+  </body>
+</html>

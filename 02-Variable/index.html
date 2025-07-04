@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>
+
+<body>
+        <h1>Variables</h1>
+</body>
+<script>
+        //  see the example of var variable declaration in javascript
+        var x = 5;
+        var y = 6;
+        x = 8; // x is reassigned that why var is global variable
+        var z = x + y;
+        document.write("The sum of x and y is " + z);
+        document.write("<br>");
+
+        //  see the example of let variable declaration in javascript
+        let a = 5;
+        let b = 6;
+        //  a = 8; // a is not reassigned that why let is local variable
+        let c = a - b;
+        document.write("The sum of a and b is " + c);
+        document.write("<br>");
+
+        //  see the example of const variable declaration in javascript
+        const d = 5;
+        const e = 6;
+        //  d = 8; // d is not reassigned that why const is constant variable
+        const f = d * e;
+        document.write("The sum of d and e is " + f);
+        document.write("<br>");
+</script>
+
+</html>
