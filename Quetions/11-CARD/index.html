@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card using Javascript</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 0;
+
+        }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="bg-dark text-light">
+    <h1 class="text-center">Create Card Using JS</h1>
+    <hr>
+    <div class="container my-5">
+      <div class="row g-5 " id="showCard">
+        
+      </div>
+    </div>
+  </body>
+  <script>
+        const array = [
+            {
+                title: "Mystical Warrior in a Minimalist",
+                imageSrc: "https://i.pinimg.com/736x/a1/07/1a/a1071ae8c28cf6394e4bdc81b4c793e4.jpg",
+                summary: "Immerse yourself in the timeless beauty of this minimalist samurai artwork, where tranquility meets strength. The vibrant red leaves and misty pagoda create a captivating scene that radiates peace and mystery. Perfect as wall art or a source of inspiration!"
+            },
+            {
+                title: "Red Lanterns Illuminate Rainy Night Path Through Torii Gate",
+                imageSrc: "https://i.pinimg.com/736x/d0/45/6b/d0456b5703c65997803d71ef0b3da756.jpg",
+                summary: "A captivating image of a path lined with glowing red lanterns leading through a torii gate in Japan, set against a backdrop of falling cherry blossoms and a rainy night. The scene evokes a sense of peace and tranquility."
+            },
+            {
+                title: "Nebula Dreamscape",
+                imageSrc: "https://cdn.myportfolio.com/c4d9177e-dd68-49c0-9a8f-bfe075846efd/601b86cc-f05c-4bcb-b7dc-97c9742c810f_rw_600.png?h=fce676e99d22d936b4086680895e7cf8",
+                summary: "Witness the breath-taking fusion of womanhood and the cosmos in Nebula Dreamscape. Here, a series of portraits of a woman being enshrined within a vibrant celestial ballet of colourful clouds and shimmering stars. "
+            },
+            {
+                title: "Mystical Warrior in a Minimalist",
+                imageSrc: "https://i.pinimg.com/736x/a1/07/1a/a1071ae8c28cf6394e4bdc81b4c793e4.jpg",
+                summary: "Immerse yourself in the timeless beauty of this minimalist samurai artwork, where tranquility meets strength. The vibrant red leaves and misty pagoda create a captivating scene that radiates peace and mystery. Perfect as wall art or a source of inspiration!"
+            },
+            {
+                title: "Nebula Dreamscape",
+                imageSrc: "https://cdn.myportfolio.com/c4d9177e-dd68-49c0-9a8f-bfe075846efd/601b86cc-f05c-4bcb-b7dc-97c9742c810f_rw_600.png?h=fce676e99d22d936b4086680895e7cf8",
+                summary: "Witness the breath-taking fusion of womanhood and the cosmos in Nebula Dreamscape. Here, a series of portraits of a woman being enshrined within a vibrant celestial ballet of colourful clouds and shimmering stars. "
+            },
+            {
+                title: "Red Lanterns Illuminate Rainy Night Path Through Torii Gate",
+                imageSrc: "https://i.pinimg.com/736x/d0/45/6b/d0456b5703c65997803d71ef0b3da756.jpg",
+                summary: "A captivating image of a path lined with glowing red lanterns leading through a torii gate in Japan, set against a backdrop of falling cherry blossoms and a rainy night. The scene evokes a sense of peace and tranquility."
+            },
+        ]
+
+        var result = " ";
+        array.forEach((obj) => {
+            result += `
+                        <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="card shadow border-1">
+                            <img height ="200" src="${obj.imageSrc}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-success"style=" font-weight: 700 ">${obj.title}</h5>
+                                        <p class="card-text text-dark">${obj.summary}</p>
+                                     <a href="#" class="btn btn-primary">Read More</a>
+                                </div>
+                        </div>
+                        </div>
+            `
+        })
+        document.getElementById("showCard").innerHTML = result
+  </script>
+</html>
